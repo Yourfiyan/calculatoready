@@ -1,6 +1,6 @@
-# 🧮 Calculator – Simple Functional Web App
+# 🧰 CalculatoReady – Simple Web Calculator
 
-A basic calculator built using vanilla HTML, CSS, and JavaScript. Designed for simplicity, with a focus on clarity in layout and core functionality. This project showcases small but practical JavaScript techniques and clean structural organization. Useful as a teaching aid, UI experiment, or starter utility.
+A basic calculator built using vanilla HTML, CSS, and JavaScript. Designed for simplicity, with a focus on clarity in layout and core functionality. This project showcases practical JavaScript techniques and clean structural organization.
 
 ---
 
@@ -9,17 +9,20 @@ A basic calculator built using vanilla HTML, CSS, and JavaScript. Designed for s
 This project uses only native browser technologies and highlights a few areas of interest:
 
 - [DOM event handling](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener) for interactive button clicks.
-- [Element selection and traversal](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll) using `querySelectorAll` and basic loops.
-- [Template literals](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Template_literals) for inline expressions.
-- Input validation to prevent duplicate operators or malformed expressions.
+- [Element selection and traversal](https://developer.mozilla.org/docs/Web/API/Document/querySelectorAll) using `querySelectorAll`.
+- Input validation to prevent duplicate operators or malformed expressions (e.g., division by zero).
 - Basic [CSS Grid](https://developer.mozilla.org/docs/Web/CSS/CSS_grid_layout) for responsive layout of calculator buttons.
+- [CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) for theme management.
+- [CSS Transitions and Transforms](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions) for UI feedback.
+- [Responsive Design with Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_queries) ensures adaptability across devices.
+- Robust numeric parsing using `parseFloat()` and `isNaN()`.
 
 ---
 
 ## 📚 Libraries & External Resources
 
-- Font: [Orbitron – Google Fonts](https://fonts.google.com/specimen/Orbitron)  
-  Used for a digital-display style in the calculator output.
+- Font: [Segoe UI – Google Fonts](https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap)
+- Icons: [Font Awesome](https://fontawesome.com/) ([CDN Link](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css))
 
 No external JavaScript or CSS frameworks are used. All functionality is written using core browser APIs.
 
@@ -28,17 +31,14 @@ No external JavaScript or CSS frameworks are used. All functionality is written 
 ## 📁 Project Structure
 
 ```plaintext
-/
+.
 ├── index.html
 ├── style.css
-├── script.js
-├── /assets
-│   └── favicon.png
+└── script.js
 ```
 
 ### Folder Notes
 
-- `/assets`: Contains optional icons or images like `favicon.png`.  
 - Root files include all layout, styling, and JavaScript logic.
 
 ---
